@@ -1,12 +1,14 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx", 
+    "jsx": "react-jsx",
     "module": "esnext",
     "target": "es6",
     "lib": ["dom", "esnext"],
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
+    "types": ["react"],
+    "skipLibCheck": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
