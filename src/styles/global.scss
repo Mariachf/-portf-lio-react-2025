@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Urbanist", sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+  body.dark-mode {
+    background-color: #03071e;
+    
+  }
+
+body.dark-mode #Sobre h2,
+body.dark-mode #Sobre p,
+body.dark-mode #Skills h2,
+body.dark-mode #Skills p,
+body.dark-mode #projeto h2,
+body.dark-mode #projeto p,
+body.dark-mode #contact h2,
+body.dark-mode #contact p
+{
+    color: #dedede;
+}
+
+body.dark-mode nav a{
+  color: #dedede;
+}
+
+  body.dark-mode h2,
+  body.dark-mode h1,
+  body.dark-mode h3,
+  body.dark-mode h4,
+  body.dark-mode .dark,
+  body.dark-mode p
+  
+ 
+  {
+    color: #dedede;
+  }
+  
+  body.dark-mode a:before{
+    background: rgb(255,109,0);
+    background: linear-gradient(90deg, rgba(255,109,0,1) 0%, rgba(3,7,30,1) 82%);
+  }
+
+  span{
+    color: #FF6D00;
+  }
+
+  /* styles dos h2 o titulo principal de cada categoria */
+
+ h2{
+    color: #03071E;
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 1em;
+    letter-spacing: 2px;
+    margin-top: 2em;
+    text-align: center;
+  }
+
+  

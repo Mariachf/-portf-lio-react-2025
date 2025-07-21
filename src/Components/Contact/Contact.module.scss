@@ -1,0 +1,45 @@
+
+
+a{
+  text-decoration: none;
+  color: #FF6D00;
+}
+.contato{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    gap: 10em; 
+    margin-top: 3em; 
+}
+
+.contact h3{
+    color: #03071E;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    margin-top: -1em;
+    text-align: center;
+}
+
+p {
+    margin-top: 0.5rem;
+    font-size: 20px;
+    
+  }
+
+  @media screen and (min-width: 390px) and (max-width: 840px) {
+    .contato {
+      height: 40vh;
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .contato > * {
+    flex: 1 1 40%; 
+    text-align: center;
+  }
+
+   
+}

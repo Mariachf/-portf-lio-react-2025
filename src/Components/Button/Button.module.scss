@@ -1,0 +1,24 @@
+button{
+    background-color: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* botão redes (linkedin, github) */
+
+.buttonRedes{
+    margin-right: 2px;
+    margin-top: 1em;
+    filter:grayscale(1);
+    transition: filter;
+    transition-duration: 1s;
+    transition-property: filter;
+    transition-timing-function: cubic-bezier(.25, 1, .30, 1);
+    color:#FF6D00;
+    background-color: transparent;
+}
+
+.buttonRedes:hover{
+    filter:grayscale(0%);
+}   
+
