@@ -1,5 +1,13 @@
 ## 💼 Portfólio | Maria Eduarda Fonseca
 
+
+<a>
+    <img src = "src/assets/Modo Claro.png" >
+    <img src = "src/assets/Modo Escuro.png" >
+    <img src = "src/assets/Mobile.png" >
+  </a>
+
+
 Este é um projeto de portfólio pessoal desenvolvido com **React**, **TypeScript** e **SCSS**, com o objetivo de apresentar minha trajetória, habilidades e projetos como desenvolvedora Front-end. O site foi pensado para ser moderno, responsivo e acessível, com recursos interativos e design limpo.
 
 ### 🔍 Funcionalidades
