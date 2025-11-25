@@ -1,134 +1,131 @@
 import styles from "./Projects.module.scss";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import Grid from "@mui/material/Grid";
-import { CiLink } from "react-icons/ci";
-import { FaSquareGithub } from "react-icons/fa6";
+import { useState } from "react";
+import { FiGithub } from "react-icons/fi";
+import { LuFigma } from "react-icons/lu";
+import { FaLink } from "react-icons/fa6";
+
+import Halloween from "../../assets/wallowen.png";
+import CV from "../../assets/cv.png";
 import Jazz from "../../assets/jazz.png";
-import CV from "../../assets/CV.png";
-import Iphone from "../../assets/iphone.png";
-import Rick from "../../assets/rick.png";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import Iphone from "../../assets/iphone.png";  
 
-const darkTheme = createTheme({
-  palette: {
-    mode: "dark",
-    primary: {
-      main: "#FF6D00",
-    },
 
-    background: {
-      default: "#9ea2bb",
-      paper: "#03071E",
-    },
-    text: {
-      primary: "#FF6D00",
-      secondary: "#ffffff",
-    },
+export default function Projetos() {
+
+
+
+const cards: FlipCardProps[] = [
+  {
+    img: Halloween ,
+    title: "Halloween",
+    sub: "React, Vite, Sass/SCSS",
+    desc: "Desafio de Halloween da comunidade Vai na Web...",
+    Github: "https://github.com/Mariachf/Halloween-",
+    figma: "https://www.figma.com/design/65ZsiKa1v6k7uUukIy89H7/halloween?node-id=0-1&p=f&t=L2dc6XT4Ynuzp4pJ-0",
+    site: "https://mariachf.github.io/Halloween-/"
   },
-});
+  {
+    img: CV,
+    title: "Currículo",
+    sub: "React, Vite, Sass/SCSS,TypeScript",
+    desc: "currículo online, com objetivo apresentar, de forma clara, as experiências, formação acadêmica e o portfólio.",
+    Github: "https://github.com/Mariachf/cv",
+    figma: "##",
+    site: "https://mariachf.github.io/cv/"
+  },
 
-export default function MediaCard() {
-  const cards = [
-    {
-      id: 1,
-      title: "Projeto Jazz",
-      content: "HTML/CSS/JS",
-      image: Jazz,
-      shareLink: "https://github.com/Mariachf/projeto_sax",
-      moreLink: "https://pjk4sh.csb.app/",
-    },
-    {
-      id: 2,
-      title: "Rick e Morty",
-      content: "REACT/API",
-      image: Rick,
-      shareLink: "https://github.com/Mariachf/Rick_and_morty",
-      moreLink: "https://rick-and-morty-gamma-three.vercel.app/",
-    },
-    {
-      id: 3,
-      title: "Página Iphone",
-      content: "HTML/CSS/JS",
-      image: Iphone,
-      shareLink: "https://github.com/Mariachf/pageiPhone",
-      moreLink: "https://mariachf.github.io/pageiPhone/",
-    },
-    {
-      id: 4,
-      title: "Currículo",
-      content: "VITE/REACT",
-      image: CV,
-      shareLink: "https://github.com/Mariachf/cv",
-      moreLink: "https://lighthearted-buttercream-2303cf.netlify.app/",
-    },
-  ];
+   {
+    img: Jazz,
+    title: "Projeto Jazz",
+    sub: "React, Styled-components",
+    desc: "Projeto Vai na web, de um site de escola de Jazz.",
+    Github: "https://github.com/Mariachf/projeto_sax",
+    figma: "##",
+    site: "https://pjk4sh.csb.app/"
+  },
+
+   {
+    img: Iphone,
+    title: "Page iPhone",
+    sub: "HTML, CSS e JavaScript",
+    desc: "Projeto de uma página de iPhone, com o objetivo de praticar HTML, CSS e JavaScript.",
+    Github: "https://github.com/Mariachf/pageiPhone",
+    figma: "https://www.figma.com/design/s5DPEqnY6pCjHGt1uQp1BZ/188238224-1c73152f-efc6-486e-9cd9-f377567fcb65?node-id=0-1&p=f&t=YlcvJT7jCLlzknmK-0",
+    site: "https://mariachf.github.io/pageiPhone/"
+  },
+  
+];
+
+  return(
+    <section className={styles.projeto} id="Projects">
+    <h2>Projetos<span>.</span></h2>
+
+     <section className={styles.cardfantasia}>
+                {cards.map((item, i) => (
+                    <FlipCard key={i} {...item} />
+                ))}
+
+                
+                 
+            </section>
+
+    </section>
+  );
+}
+
+interface FlipCardProps {
+  img: string;
+  title: string;
+  sub: string;
+  desc: string;
+  Github: string;
+  figma:string;
+  site:string;
+}
+
+function FlipCard({ img, title, sub, desc, Github, figma, site}: FlipCardProps) {
+  const [flip, setFlip] = useState(false);
 
   return (
-    <section id="Projects" className={styles.projects}>
-      <h2>
-        Projetos<span>.</span>
-      </h2>
 
-      <ThemeProvider theme={darkTheme}>
-        <Grid
-          container
-          rowSpacing={5}
-          columnSpacing={0}
-          justifyContent="center"
-        >
-          {cards.map((card) => (
-            <Grid
-              item
-              xs={12}
-              sm={6}
-              md={6}
-              key={card.id}
-              sx={{ width: "80%" }}
-            >
-              <Card sx={{ maxWidth: 345, width: "100%", mx: "auto" }}>
-                <CardMedia
-                  sx={{ height: 140 }}
-                  image={card.image}
-                  title={card.title}
-                />
-                <CardContent>
-                  <Typography gutterBottom variant="h5" component="div">
-                    {card.title}
-                  </Typography>
-                  <Typography variant="body2" color="text.secondary">
-                    {card.content}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Button
-                    size="small"
-                    component="a"
-                    href={card.shareLink}
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <FaSquareGithub color="FF6D00" size={27} />
-                  </Button>
-                  <Button
-                    size="small"
-                    component="a"
-                    href={card.moreLink}
-                    target="_blank"
-                    rel="noopener"
-                  >
-                    <CiLink color="FF6D00" size={27} />
-                  </Button>
-                </CardActions>
-              </Card>
-            </Grid>
-          ))}
-        </Grid>
-      </ThemeProvider>
-    </section>
+   
+    <div
+      className={styles.flipcard}
+      onMouseEnter={() => setFlip(true)}
+      onMouseLeave={() => setFlip(false)}
+    >
+      <div className={`${styles.flipcardinner} ${flip ? styles.flipped : ''}`}>
+        {/* Frente */}
+        <div className={ styles.flipcardback}>
+          
+          <img src={img} alt={title} />
+          
+          <div className={styles.fig}>
+          <a href={Github} target="_blank" rel="noopener noreferrer">
+            <FiGithub size={20} />
+          </a>
+           <a href={site} target="_blank" rel="noopener noreferrer">
+           <FaLink size={20} />
+          </a>
+          <a href={figma} target="_blank" rel="noopener noreferrer">
+           <LuFigma size={20} />
+          </a>
+         
+          </div>
+        </div>
+        {/* Verso */}
+        <div className={styles.flipcardfront}>
+          <h4>{title}</h4>
+          <h5 className={styles.sub}>{sub}</h5>
+          <p>{desc}</p>
+          
+        </div>
+
+        
+      </div>
+
+     
+    </div>
+    
   );
 }
