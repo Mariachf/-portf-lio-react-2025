@@ -37,13 +37,3 @@ Este é um projeto de portfólio pessoal desenvolvido com **React**, **TypeScrip
 - **Contato:** Formas de me contatar diretamente.
 - **Footer:** Créditos e assinatura do site.
 
-### 🚀 Projetos em destaque
-
-| Projeto         | Tecnologias       | Visualizar | GitHub |
-|----------------|-------------------|------------|--------|
-| **Projeto Jazz** | HTML, CSS, JS     | [🔗 Site](https://pjk4sh.csb.app/) | [💻 Código](https://github.com/Mariachf/projeto_sax) |
-| **Rick e Morty** | React, API        | [🔗 Site](https://rick-and-morty-gamma-three.vercel.app/) | [💻 Código](https://github.com/Mariachf/Rick_and_morty) |
-| **Página iPhone**| HTML, CSS, JS     | [🔗 Site](https://mariachf.github.io/pageiPhone/) | [💻 Código](https://github.com/Mariachf/pageiPhone) |
-| **Currículo**    | React, Vite       | [🔗 Site](https://lighthearted-buttercream-2303cf.netlify.app/) | [💻 Código](https://github.com/Mariachf/cv) |
-
----
