@@ -40,7 +40,7 @@ const cards: FlipCardProps[] = [
     sub: "React, Styled-components",
     desc: "Projeto Vai na web, de um site de escola de Jazz.",
     Github: "https://github.com/Mariachf/projeto_sax",
-    figma: "##",
+    figma: "https://www.figma.com/design/76GJ4uK7PyKeAo6dcpVyjA/Tom-s-Jazz-School?node-id=0-1&p=f&t=ZxDYIEDE0b7ySwgU-0",
     site: "https://pjk4sh.csb.app/"
   },
 
