@@ -6,8 +6,8 @@ import { FaLink } from "react-icons/fa6";
 
 import Halloween from "../../assets/wallowen.png";
 import CV from "../../assets/CV.png";
-import Jazz from "../../assets/jazz.png";
-import Iphone from "../../assets/iphone.png";  
+import Jazz from "../../assets/JAZZ.png";
+import Iphone from "../../assets/Iphone.png";
 
 
 export default function Projetos() {
