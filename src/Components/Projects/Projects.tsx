@@ -5,7 +5,7 @@ import { LuFigma } from "react-icons/lu";
 import { FaLink } from "react-icons/fa6";
 
 import Halloween from "../../assets/wallowen.png";
-import CV from "../../assets/cv.png";
+import CV from "../../assets/CV.png";
 import Jazz from "../../assets/jazz.png";
 import Iphone from "../../assets/iphone.png";  
 
