@@ -1,6 +1,5 @@
 ## 💼 Portfólio | Maria Eduarda Fonseca
 
-
 <a>
     <img src = "src/assets/Modo Claro.png" >
     <img src = "src/assets/Modo Escuro.png" >
