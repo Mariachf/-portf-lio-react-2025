@@ -1,5 +1,5 @@
 import styles from './About.module.scss';
-import Perfil from '/Microsoft VS Code/portifolio/src/assets/Woman.png';
+import Woman from "../../assets/Woman.png";
 import { FaFileDownload } from "react-icons/fa";
 import styled from '../Button/Button.module.scss';
 
@@ -10,7 +10,7 @@ export default function About() {
             <h2 >Sobre mim<span>.</span></h2>
 
             <div className={styles.imgText}>
-                <img src={Perfil} alt="Mulher lendo" />
+                <img src={Woman} alt="Mulher lendo" />
                 
                 <div className={styles.text}>
                     <p>Meu nome é Maria Eduarda Fonseca. Encantei-me pelo mundo da tecnologia quando, no meu primeiro emprego, fui apresentada à montagem de computadores para games. Com os olhos brilhando, decidi trilhar o caminho da programação.</p>
